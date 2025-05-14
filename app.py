@@ -1,7 +1,6 @@
 from flask import Flask, render_template
 from sqlite3 import connect, Row, Connection
 
-conn = None
 def get_db_connection() -> Connection:
     conn = connect('database.db')
     conn.row_factory = Row
@@ -17,7 +16,7 @@ def index():
     return render_template('index.html', posts=posts)
 
 @app.route('/hello')
-def hello_world():  # put application's code here
+def hello_world():
     return 'Hello World!'
 
 if __name__ == '__main__':

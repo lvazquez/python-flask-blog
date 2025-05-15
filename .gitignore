@@ -5,6 +5,7 @@
 *.iws
 out/
 build/
+.idea/
 __pycache__/
 temp/
 *~

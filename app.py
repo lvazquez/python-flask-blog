@@ -32,7 +32,7 @@ def post(post_id):
     return render_template('post.html', post=post_info)
 
 @app.route('/hello')
-def hello_world():  # put application's code here
+def hello_world():
     return 'Hello World!'
 
 if __name__ == '__main__':

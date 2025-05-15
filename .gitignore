@@ -1,8 +1,10 @@
 .gradle/
+.idea/
 *.iml
 *.ipr
 *.iws
 out/
 build/
 __pycache__/
+temp/
 *~
